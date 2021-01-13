@@ -1,95 +1,223 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
     <head>
         <title>Paulo Vicente</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Official website of Paulo Vicente" />
-        <meta name="robots" content="index,follow" />
-        <link type="text/css" rel="stylesheet" href="./css/style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+        <meta name="description" content="Paulo Vicente's Portfolio"/>
+
+        <meta property="og:title" content="Paulo Vicente" />
+        <meta property="og:image" content="./assets/img/preview.JPG" />
+        <meta property="og:description" content="Paulo Vicente's Portfolio." />
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link  rel="icon"   href="assets/img/favicon.png" type="image/png" />
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./assets/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
 
     <body>
-        <!-- Website Header -->
-        <header>
-            <!-- Main Navigation -->
-            <nav>
-                <div class="aw-container aw-align-center">
-                    <a class="aw-logo aw-section-link" href="#"><img class="aw-logo aw-section-link" src="img/me.png" alt="PV" /></a>
 
-                    <ul class="aw-navigation">
-                        <li><a class="aw-section-link" href="#">Home</a></li>
-                        <li><a class="aw-section-projects" href="#Projects">Projects</a></li>
-                        <li><a class="aw-section-link" href="#aw-gallery">blog</a></li>
-                        <li><a class="aw-section-link" href="#aw-about">About me</a></li>
-                        <li><a class="aw-section-link" href="#aw-contact">Contact</a></li>
+        <!-- header -->
+        <header class="l-header">
+            <!-- navbar -->
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><img  class="nav__img" id="navlogo" src="assets/img/logo-nav.png" alt="Logo Paulo Vicente"><p>&lt;paulo-vicente/&gt;</p></a>
+                </div>
+                <!-- nav menu -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><i class='bx bxs-toggle-left change-theme' id="theme-button"></i></li>
                     </ul>
-                    <i class="icon-menu aw-nav-toggle"></i>
+                </div>
+                <!-- nav menu mobile icon -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
             </nav>
-
-            <!-- Header Content -->
-            <section class="aw-header-content">
-                <div class="aw-header-text">
-                    <h1 class="aw-pulsate">Hey!! Paulo here</h1>
-                    <h2 class="aw-legend">A FullStack Web developer</h2>
-                    <i class="aw-arrow aw-section-link" data-href="#aw-about"></i>
-                </div>
-                <img
-                    class="aw-main-banner"
-                    src="./img/main-banner.jpg"
-                    alt="main banner"
-                    />
-            </section>
         </header>
 
-        <!-- Main Content -->
-        <section>
-            <!-- About section-->
-            <section id="aw-about" class="aw-container aw-section">
-                <h3>About me</h3>
-            </section>
-
-           <!-- Contact -->
-            <section id="aw-contact" class="aw-section">
-                <h3>Contact me</h3>
-
-                <form action="" method="">
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="text" name="surname" placeholder="Surname" />
-                    <input type="email" name="email" placeholder="Email" />
-                    <textarea placeholder="Your Message"></textarea>
-
-                    <input type="submit" value="Submit" />
-                </form>
-            </section>
-        </section>
-
-        <!-- Website Footer -->
-        <footer>
-            <div class="aw-container aw-align-center">
-                <a class="aw-logo aw-section-link" href="#">PV</a>
-
-                <ul class="aw-social-icons">
-                    <li>
-                        <a href="https://github.com/0xb0b1"
-                           ><i class="icon-github"></i
-                           ></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/p_vcent/"
-                           ><i class="icon-twitter"></i
-                           ></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/paulo-vicente-6abab0198/"
-                           ><i class="icon-linkedin"></i
-                           ></a>
-                    </li>
-                </ul>
+        <main class="l-main">
+            <!-- background stars-->
+            <div>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <div id='stars4'></div>
             </div>
-        </footer>
+            <!-- back to top button -->
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+            <!-- home -->
+            <section class="home bd-grid" id="home">
+                <!-- title & contact button -->
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I'm <span class="home__title-color">Paulo Vicente.</span><br><span class="spin"></span>.</h1>
+                    <a href="#contact" class="button" >Contact</a>
+                </div>
+                <!-- social icons -->
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/paulo-vicente-6abab0198" target="_blank" class="home__social-icon"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://github.com/0xb0b1" target="_blank" class="home__social-icon"><i class='fab fa-github' ></i></a>
+                    <a href="mailto:vcente82.ip@gmail.com" target="_blank" class="home__social-icon"><i class='far fa-envelope' ></i></a>
+                </div>
+                <!-- logo -->
+                <div class="home__img" id="logo"> </div>
+            </section>
+            <!-- about -->
+            <section class="send section" id="about">
+                <div class="send__container">
+                    <div class="bd-container bd-grid">
+                        <div class="send__content">
+                            <h2 class="section-title-center send__title">About</h2>
+                            <p class="send__description"> I'm a Front-End Developer for Rurópolis in Pará, Brasil.
+                                I have serious passion for UI effects, animations and creating intuitive, dynamic user
+                                experiences, and sometimes I do backend development.
+                            </p>
+                        </div>
+ 
+                        <div class="send__img">
+                            <table class="infome">
+                                <tr>
+                                    <td class="me"><i class="fas fa-user"></i></td>
+                                    <td class="me"><p>Paulo Vicente</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-volume-up"></i></td>
+                                    <td class="me"><p>Portuguese & English</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-map-marker-alt"></i></td>
+                                    <td class="me"><p>Pará, Brasil</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- cv button -->
+                    <a href="#" target="_blank" class="buttoncv " >Download CV</a>
+                </div>
+            </section>
 
-        <script src="./js/main.js"></script>
+            <!-- Projects -->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <a href="#" target="_blank" ><img src="assets/img/work00.jpg" alt="cooming soon"></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="#" target="_blank" ><img src="assets/img/work00.jpg" alt="cooming soon"></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="#" target="_blank" ><img src="assets/img/work00.jpg" alt="cooming soon"></a>
+                    </div>
+                </div>
+
+                <!-- github button -->
+                <div class="ab__container bd-grid">
+                    <a id="seemore" href="https://github.com/0xb0b1" target="_blank" class="button bd-grid" >See More (GitHub)</a>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section class="work section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <!-- skills logos -->
+                <div class="hab__container bd-grid">
+                    <div class="hab__img">
+                        <a><img src="assets/img/html5.png" alt="html5 logo"></a>
+                    </div>
+                    <div class="hab__img">
+                        <a><img src="assets/img/css3.png" alt="css3 logo"></a>
+                    </div>
+                    <div class="hab__img">
+                        <a ><img src="assets/img/js.png" alt="javascript logo"></a>
+                    </div>
+                    <div class="hab__img">
+                        <a ><img src="assets/img/node.png" alt="node logo"></a>
+                    </div>
+                    <div class="hab__img">
+                        <a ><img src="assets/img/reactjs.svg" alt="reactjs logo"></a>
+                    </div>
+                    <div class="hab__img">
+                        <a ><img src="assets/img/git.png" alt="git logo"></a>
+                    </div>
+                </div>
+
+                <!-- skills names -->
+                <div class="ab__container bd-grid">
+                    <h2 class="about__subtitle"></h2>
+                    <p class="about__text">HTML5 • CSS3 • JavaScript • NodeJs & Express • npm • Git & GitHub • ReactJS </p>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="send1 section1 contact" id="contact">
+                <div class="send__container1">
+                    <div class="send__content1 bd-grid">
+                        <h2 class="section-title-center send__title1">Contact</h2>
+                        <p class="send__description"></p>
+
+                        <div class="contact__container bd-grid">
+                            <form name='form' id='form' method='post' target='_self' enctype="multipart/form-data" class="contact__form">
+                                <input type='text' name='name' id='name' placeholder="Name" class="contact__input">
+                                <input type='text' name='email' id='email' pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required placeholder="Email" class="contact__input">
+                                <textarea name="message" id="message" cols="10" rows="10" placeholder="Message" class="contact__input"></textarea>
+                                <input id="send-button" type="submit" value="Send" class="contact__button buttonct">
+                            </form>
+                        </div>
+
+                        <!-- button -->
+                        <a href="mailto:vcente82.ip@gmail.com" class="buttonct1 bd-grid" >Or send me an Email</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer">
+                <!-- footer title -->
+                <p class="footer__title">Paulo Vicente</p>
+                <!-- footer social links -->
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="footer__icon"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://github.com/0xb0b1" target="_blank" class="footer__icon"><i class='fab fa-github' ></i></a>
+                    <a href="mailto:vcente82.ip@gmail.com" target="_blank" class="footer__icon"><i class='far fa-envelope' ></i></a>
+                </div>
+                <!-- copyright -->
+                <p class="footer__copy">Made with 💜 by Paulo. &#169; 2021 .</p>
+            </footer>
+
+            <!-- animation intro -->
+            <div class="intro">
+                <div class="intro-text">
+                    <h1 class="hide">
+                        <span class="text">PAULO</span>
+                    </h1>
+                    <h1 class="hide">
+                        <span class="text">VICENTE</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="slider"></div>
+
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+                integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+                crossorigin="anonymous"
+                ></script>
+
+            <script src="https://unpkg.com/scrollreveal"></script>
+
+            <script src="assets/js/main.js"></script>
+
     </body>
-</html>
 
+</html>
