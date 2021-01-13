@@ -451,7 +451,6 @@ img {
 }
 
 .send__container1 {
-    width: 600px;
     max-width: 1024px;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -797,7 +796,6 @@ td .fas {
     }
 
     .send1 {
-        background-color: var(--first-color);
         background: none;
     }
 
