@@ -48,6 +48,7 @@ body.dark-theme {
 /* fonts and text */
 :root {
     --body-font: 'Poppins', sans-serif;
+    --custom-font: 'Oswald', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.92rem;
