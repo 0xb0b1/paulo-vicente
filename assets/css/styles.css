@@ -319,7 +319,7 @@ img {
 .home__social-icon {
     width: max-content;
     margin-bottom: var(--margin-2);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--second-color);
     align-items: center;
 }
@@ -334,7 +334,7 @@ img {
 
 /* text chage */
 .home__title, .spin:after {
-    content: 'Web Developer';
+    content: 'Front-End Developer';
     animation: text 9s linear infinite;
 }
 
