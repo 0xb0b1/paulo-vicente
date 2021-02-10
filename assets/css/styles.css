@@ -3,6 +3,7 @@
 /* css variables */
 :root {
     --header-height: 3rem;
+    --font-high: 900;
     --font-semi: 600;
     --font-min: 300;
 }
@@ -12,11 +13,8 @@
     --first-color: #2D9AD1;
     --second-color: #363636;
     --third-color: rgb(0, 0, 0);
-    --fourth-color: rgb(231, 231, 231);
-    --five-color: #000;
     --body-color: rgb(228, 228, 228);
     --nav-color: #efefef;
-    --card-color: #FFF;
     --card2-color: #363636;
 }
 
@@ -25,11 +23,8 @@ body.dark-theme {
     --first-color: #21688B;
     --second-color: #ffffff;
     --third-color: rgb(255, 255, 255);
-    --fourth-color: rgb(231, 231, 231);
-    --five-color: rgb(255, 255, 255);
     --body-color: rgb(37, 37, 37);
     --nav-color: rgb(48, 48, 48);
-    --card-color: #363636;
     --card2-color: #FFF;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -47,8 +42,7 @@ body.dark-theme {
 
 /* fonts and text */
 :root {
-    --body-font: 'Poppins', sans-serif;
-    --custom-font: 'Oswald', sans-serif;
+    --body-font: 'Oswald', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.92rem;
@@ -218,6 +212,7 @@ img {
 }
 
 .nav__item {
+    font-weight: var(--font-high);
     margin-bottom: var(--margin-4);
 }
 
@@ -665,7 +660,7 @@ td .fas {
 }
 
 .footer__copy {
-    font-weight: var(--font-min);
+    font-weight: var(--font-high);
     font-size: var(--normal-font-size);
 }
 
@@ -860,12 +855,6 @@ td .fas {
         margin-right: auto;
         max-width: 1024px;
     }
-}
-
-canvas {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
 }
 
 #stars {
