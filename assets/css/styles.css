@@ -834,8 +834,8 @@ td .fas {
 }
 
 .hab__container {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     column-gap: 6rem;
     row-gap: 6rem;
     align-items: center;
