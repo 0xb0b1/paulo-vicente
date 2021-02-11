@@ -191,7 +191,7 @@ img {
         position: fixed;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
+        width: 50%;
         height: 100%;
         padding: 2rem;
         background-color: var(--nav-color);
@@ -808,8 +808,8 @@ td .fas {
 
 @media screen and (max-width: 710px) {
     .hab__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         row-gap: 1rem;
         column-gap: 2rem;
     }
@@ -837,7 +837,7 @@ td .fas {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     column-gap: 6rem;
-    row-gap: 6rem;
+    row-gap: 2rem;
     align-items: center;
 }
 
