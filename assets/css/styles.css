@@ -688,6 +688,7 @@ td .fas {
 
     .bd-container {
         grid-template-columns: 1.9fr .9fr;
+        grid-template-rows: auto;
     }
 
     .send__description {
