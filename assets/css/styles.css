@@ -997,16 +997,6 @@ td .fas {
     align-items: center;
 }
 
-.slider {
-    background: var(--body-color);
-    position: fixed;
-    z-index: var(--z-fixed);
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-}
-
 .intro-text {
     color: rgb(233, 233, 233);
     font-family: "Oswald", sans-serif;
