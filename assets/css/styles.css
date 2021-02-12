@@ -441,7 +441,7 @@ img {
 
 .send__container {
     max-width: 1024px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .send__container1 {
@@ -452,11 +452,9 @@ img {
 
 .send__title {
     margin-bottom: 1rem;
-}
-
-.send__title {
-    color: var(--card2-color);
-    text-align: left;
+    color: black;
+    text-align: center;
+    margin-top: 3.8rem;
 }
 
 .send__title1 {
@@ -466,7 +464,7 @@ img {
 
 .send__description {
     text-align: justify;
-    color: var(--card2-color);
+    color: black;
     margin-bottom: var(--mb-3);
 }
 
@@ -487,8 +485,7 @@ td .fas {
 }
 
 .me .fas {
-    font-size: 1.3rem;
-    vertical-align: center;
+    font-size: .9rem;
 }
 
 .me p {
@@ -690,11 +687,11 @@ td .fas {
     }
 
     .bd-container {
-        grid-template-columns: 1.8fr 1fr;
+        grid-template-columns: 1.9fr .9fr;
     }
 
     .send__description {
-        text-align: justify;
+        text-align: center;
     }
 
     .send__img {
@@ -1011,7 +1008,7 @@ td .fas {
 
 .intro-text {
     color: rgb(233, 233, 233);
-    font-family: "Heebo", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 3rem;
     z-index: var(--z-fixed);
 }
