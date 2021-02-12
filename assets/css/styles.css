@@ -544,20 +544,20 @@ td .fas {
 }
 
 .skills__html {
-    width: 85%;
+    max-width: 85%;
+    height: auto;
 }
 
 .skills__css {
-    width: 65%;
+    max-width: 65%;
+    height: auto;
 }
 
 .skills__js {
-    width: 55%;
+    max-width: 55%;
+    height: auto;
 }
 
-.skills__ux {
-    width: 95%;
-}
 
 .skills__img {
     border-radius: .5rem;
@@ -577,6 +577,8 @@ td .fas {
 .work__img img {
     transition: 1s;
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
 }
 
 .work__img img:hover {
