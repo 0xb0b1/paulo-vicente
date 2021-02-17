@@ -40,7 +40,7 @@ body.dark-theme {
 
 /* fonts and text */
 :root {
-    --body-font: 'Oswald', sans-serif;
+    --body-font: 'Lato', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.92rem;
@@ -569,6 +569,7 @@ td .fas {
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.575);
     border-radius: .5rem;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .work__img img {
@@ -848,6 +849,7 @@ td .fas {
         text-align: center;
     }
 
+
     .send__container, .send__container1 {
         margin-left: auto;
         margin-right: auto;
@@ -997,7 +999,7 @@ td .fas {
 
 .intro-text {
     color: rgb(233, 233, 233);
-    font-family: "Oswald", sans-serif;
+    font-family: "monospace", sans-serif;
     font-size: 3rem;
     z-index: var(--z-fixed);
 }
