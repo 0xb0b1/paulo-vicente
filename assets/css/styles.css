@@ -1037,8 +1037,8 @@ body::-webkit-scrollbar-thumb:active {
     border-radius: 10px;
 }
 
-.html {width: 90%; background-color: var(--first-color);} /* Green */
-.css {width: 80%; background-color: var(--first-color);} /* Blue */
-.javascript {width: 70%; background-color: var(--first-color);} /* Red */
-.reactjs {width: 65%; background-color: var(--first-color);} /* Dark Grey */
-.typescript {width: 50%; background-color: var(--first-color);} /* Dark Grey */
+.html {width: 90%; background-color: var(--first-color);} 
+.css {width: 80%; background-color: var(--first-color);} 
+.javascript {width: 70%; background-color: var(--first-color);} 
+.reactjs {width: 65%; background-color: var(--first-color);} 
+.typescript {width: 50%; background-color: var(--first-color);}
