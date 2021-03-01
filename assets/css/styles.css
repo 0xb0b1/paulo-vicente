@@ -40,7 +40,7 @@ body.dark-theme {
 
 /* fonts and text */
 :root {
-    --body-font: 'Lato', sans-serif;
+    --body-font: 'Titillium Web', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: 0.92rem;
@@ -444,22 +444,11 @@ img {
     margin-top: 1rem;
 }
 
-.send__container1 {
-    max-width: 1024px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 .send__title {
     margin-bottom: 1rem;
     color: black;
     text-align: center;
-    margin-top: 3.8rem;
-}
-
-.send__title1 {
-    color: #FFF;
-    text-align: center;
+    margin-top: 1.8rem;
 }
 
 .send__description {
@@ -999,8 +988,8 @@ td .fas {
 
 .intro-text {
     color: rgb(233, 233, 233);
-    font-family: "monospace", sans-serif;
-    font-size: 3rem;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2rem;
     z-index: var(--z-fixed);
 }
 
