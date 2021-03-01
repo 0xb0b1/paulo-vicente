@@ -327,10 +327,10 @@ img {
 
 @keyframes text {
     30% {
-        content: "JavaScript Developer";
+        content: "JavaScript & TypeScript";
     }
     60% {
-        content: "Security Enthusiast";
+        content: "ReactJS Developer";
     }
 }
 
@@ -559,11 +559,11 @@ td .fas {
     transform: scale(1.1);
 }
 
-.hab__img {
+/*.hab__img {
     overflow: hidden;
     cursor: default;
     z-index: 0;
-}
+}*/
 
 #seemore {
     width: 100%;
@@ -783,7 +783,7 @@ td .fas {
     }
 }
 
-@media screen and (max-width: 710px) {
+/* @media screen and (max-width: 710px) {
     .hab__container {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -791,6 +791,7 @@ td .fas {
         column-gap: 2rem;
     }
 }
+*/
 
 @media screen and (max-width: 768px) {
     #back-to-top-btn {
@@ -810,13 +811,13 @@ td .fas {
     }
 }
 
-.hab__container {
+/*.hab__container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     column-gap: 6rem;
     row-gap: 2rem;
     align-items: center;
-}
+}*/
 
 @media screen and (min-width: 1025px) {
     .bd-grid {
@@ -1018,3 +1019,26 @@ body::-webkit-scrollbar-thumb:active {
     background-color: var(--first-color);
 }
 
+
+/* copied */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    font-weight: 600;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--third-color);
+    border: 4px solid #ccc;
+    border-radius: 10px;
+}
+
+.html {width: 90%; background-color: var(--first-color);} /* Green */
+.css {width: 80%; background-color: var(--first-color);} /* Blue */
+.javascript {width: 70%; background-color: var(--first-color);} /* Red */
+.reactjs {width: 65%; background-color: var(--first-color);} /* Dark Grey */
+.typescript {width: 50%; background-color: var(--first-color);} /* Dark Grey */
