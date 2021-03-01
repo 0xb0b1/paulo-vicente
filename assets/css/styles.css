@@ -149,12 +149,6 @@ img {
     padding-right: 4%;
 }
 
-.send1 {
-    background-color: var(--second-color);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 /* layout */
 .bd-grid {
     max-width: 1024px;
@@ -423,18 +417,9 @@ img {
     border-radius: .5rem;
 }
 
-.ab__container {
-    text-align: center;
-}
-
 /* send me a gift */
 .send {
     background-color: var(--nav-color);
-    z-index: var(--z-normal);
-    position: relative;
-}
-
-.send1 {
     z-index: var(--z-normal);
     position: relative;
 }
@@ -446,14 +431,16 @@ img {
 
 .send__title {
     margin-bottom: 1rem;
-    color: black;
+    color: var(--second-color);
     text-align: center;
     margin-top: 1.8rem;
 }
 
 .send__description {
     text-align: justify;
-    color: black;
+    font-family: "monospace", sans-serif;
+    font-weight: 600;
+    color: var(--second-color);
     margin-bottom: var(--mb-3);
 }
 
