@@ -320,7 +320,7 @@ a {
 /* text chage */
 .home__title,
 .spin:after {
-    content: 'Front-End Engineer';
+    content: 'Front-End Developer';
     animation: text 9s linear infinite;
 }
 
