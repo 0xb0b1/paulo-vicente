@@ -20,7 +20,7 @@
 /* dark mode variables */
 body.dark-theme {
     --first-color: #21688B;
-    --skills-box: #000;
+    --skills-box: #363636;
     --second-color: #ffffff;
     --third-color: rgb(255, 255, 255);
     --body-color: rgb(37, 37, 37);
@@ -92,6 +92,7 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+
     color: var(--second-color);
     background-color: var(--body-color);
     background-image: radial-gradient(circle at top right,
@@ -485,7 +486,7 @@ main #projetos #linkRepo {
 main #projetos h2 {
     text-align: center;
     margin-top: 20px;
-    color: #0e2431;
+    color: var(--second-color);
     font-size: 30px
 }
 
@@ -501,7 +502,7 @@ main #projetos article div {
     height: auto;
     flex-grow: 1;
     flex-basis: 300px;
-    background-color: #fafafa;
+    background-color: var(--skills-box);
     padding: 40px 40px 80px 40px;
     margin: 10px;
     border-radius: 5px;
@@ -632,7 +633,7 @@ main .imageIcone {
 
 /* contact */
 #contact {
-    background-color: #fafafa;
+    background-color: var(--body-color);
     padding: 70px;
     display: flex;
     justify-content: center;
@@ -644,7 +645,7 @@ main .imageIcone {
 }
 
 #contact #contactField {
-    background-color: #fff;
+    background-color: var(--skills-box);
     width: 60%;
     height: auto;
     border-radius: 10px;
