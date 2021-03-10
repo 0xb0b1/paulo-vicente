@@ -9,6 +9,7 @@
 /* colors */
 :root {
     --first-color: #2D9AD1;
+    --skills-box: #fff;
     --second-color: #363636;
     --third-color: rgb(0, 0, 0);
     --body-color: rgb(228, 228, 228);
@@ -19,6 +20,7 @@
 /* dark mode variables */
 body.dark-theme {
     --first-color: #21688B;
+    --skills-box: #000;
     --second-color: #ffffff;
     --third-color: rgb(255, 255, 255);
     --body-color: rgb(37, 37, 37);
@@ -469,135 +471,283 @@ td .fas {
     margin-left: .5rem;
 }
 
-/* skills */
-.skills__container {
-    row-gap: 2rem;
+/* projects */
+main #projetos {
+    padding: 70px;
+    text-align: center
+}
+
+main #projetos #linkRepo {
+    color: #4070f4;
+    font-size: 18px
+}
+
+main #projetos h2 {
     text-align: center;
+    margin-top: 20px;
+    color: #0e2431;
+    font-size: 30px
 }
 
-.skills__subtitle {
-    margin-bottom: var(--mb-2);
-}
-
-.skills__text {
-    margin-bottom: var(--mb-4);
-}
-
-.skills__data {
+main #projetos article {
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-weight: var(--font-semi);
-    padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
-    border-radius: .5rem;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
-    background-color: rgb(48, 48, 48);
+    flex-wrap: wrap;
+    text-align: left
 }
 
-.skills__icon {
-    font-size: 2rem;
-    margin-right: var(--mb-2);
-    color: var(--first-color);
+main #projetos article div {
+    height: auto;
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #fafafa;
+    padding: 40px 40px 80px 40px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #cacaca;
+    position: relative
 }
 
-.skills__names {
-    display: flex;
-    align-items: center;
+main #projetos article div h3 {
+    font-size: 1.2rem
 }
 
-.skills__bar {
+main #projetos article div p {
+    margin: 20px 0px;
+    font-size: 0.9rem
+}
+
+main #projetos article div .botoes-projetos {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: var(--z-back);
+    bottom: 40px;
+    left: 40px
 }
 
-.skills__html {
-    max-width: 85%;
-    height: auto;
+main #projetos article div a {
+    margin-right: 10px
 }
 
-.skills__css {
-    max-width: 65%;
-    height: auto;
+main #projetos article div .live-button {
+    background-color: #4070f4;
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer
 }
 
-.skills__js {
-    max-width: 55%;
-    height: auto;
+main #projetos article div .live-button:hover {
+    cursor: pointer;
+    background-color: #3460da
+}
+
+main #projetos article div .github-button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+main #projetos article div .github-button:hover {
+    cursor: pointer;
+    background-color: #3460da
+}
+
+@media screen and (max-width: 800px) {
+    main #projetos {
+        padding: 70px 10px
+    }
 }
 
 
-.skills__img {
-    border-radius: .5rem;
+/* skills */
+main .imageIcone {
+    width: 50px
 }
 
-/* projects */
-.work__container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+.imageIcones {
+    width: 100px
 }
 
-.project__box {
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 1);
-    background-color: #2D9AD1;
-    border-radius: .5rem;
-    max-height: 200px;
-    max-width: 220px;
-}
-
-.project__box img {
-    object-fit: cover;
-
-    width: 200px;
-    height: 220px;
-}
-
-.project__box:hover {
-    transform: scale(1.1);
-}
-
-#seemore {
+#skills {
     width: 100%;
+    padding: 70px;
+    overflow: hidden
+}
+
+#skills h2 {
     text-align: center;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
+    color: var(--second-color);
+    font-size: 30px
+}
+
+#skills div {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 5px
+}
+
+#skills article {
+    text-align: center;
+    height: auto;
+    background-color: var(--skills-box);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    transition: all 0.5s
+}
+
+#skills article:hover {
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+#skills article h2 {
+    padding: 10px 0px;
+    font-size: 20px
+}
+
+#skills article p {
+    line-height: 30px
+}
+
+@media screen and (max-width: 800px) {
+    #skills {
+        padding: 70px 10px
+    }
 }
 
 /* contact */
-.contact__input {
+#contact {
+    background-color: #fafafa;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#contact fieldset {
+    border: none
+}
+
+#contact #contactField {
+    background-color: #fff;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #e7e7e7;
+    padding: 30px
+}
+
+#contact #contactField #campoFlex {
+    display: flex;
+    justify-content: space-between
+}
+
+#contact #contactField .campoPadrao {
+    width: 47%
+}
+
+#contact #contactField input {
+    border: none;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 14px
+}
+
+#contact #contactField textarea {
+    border: none;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 14px
+}
+
+#contact #contactField .campos {
     width: 100%;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-semi);
-    padding: 1rem;
-    border-radius: 15px;
-    border: 1.5px solid var(--second-color);
-    outline: none;
-    margin-bottom: var(--margin-4);
-    background-color: var(--nav-color);
-    color: var(--second-color);
-    resize: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f0f0f0
 }
 
-.contact__button {
-    display: block;
-    outline: none;
-    font-size: var(--normal-font-size);
+#contact #contactField #captcha {
+    font-size: 20px;
+    float: right
+}
+
+#contact #contactField #captcha #campo {
+    width: 40px;
+    height: 30px;
+    background-color: #ddd;
+    padding-left: 15px;
+    border-radius: 5px
+}
+
+#contact #campoDois {
+    margin-top: 20px
+}
+
+#contact #campoDois #campoMensagem {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px
+}
+
+#contact #botao {
+    margin-top: 20px;
+    background-color: #4070f4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: auto;
-    margin-bottom: var(--margin-4);
+    font-size: 18px;
+    font-weight: 700
 }
 
-.contact__input::placeholder {
-    color: var(--second-color)
+#contact #botao:hover {
+    background-color: #3460da
+}
+
+@media screen and (max-width: 1100px) {
+    #contact {
+        padding: 70px 20px
+    }
+
+    #contact #agradecimento {
+        display: none
+    }
+
+    #contato #contactField {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #contact #contactField #campoFlex {
+        flex-wrap: wrap
+    }
+
+    #contact #contactField #campoFlex #espacoResponsivo {
+        margin-top: 20px
+    }
+
+    #contact #contactField .campoPadrao {
+        width: 100%
+    }
 }
 
 /* footer */
@@ -738,8 +888,7 @@ td .fas {
         text-align: center;
     }
 
-    .about__container,
-    .skills__container {
+    .about__container {
         align-items: center;
         text-align: initial;
     }
@@ -1012,43 +1161,3 @@ body::-webkit-scrollbar-thumb:active {
 
 
 /* copied */
-
-.skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-
-    font-weight: 600;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: var(--third-color);
-    border: 4px solid #ccc;
-    border-radius: 10px;
-}
-
-.html {
-    width: 90%;
-    background-color: var(--first-color);
-}
-
-.css {
-    width: 80%;
-    background-color: var(--first-color);
-}
-
-.javascript {
-    width: 70%;
-    background-color: var(--first-color);
-}
-
-.reactjs {
-    width: 65%;
-    background-color: var(--first-color);
-}
-
-.typescript {
-    width: 50%;
-    background-color: var(--first-color);
-}
