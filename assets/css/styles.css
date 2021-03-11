@@ -8,7 +8,7 @@
 
 /* colors */
 :root {
-    --first-color: #2D9AD1;
+    --first-color: #4070f4;
     --skills-box: #fff;
     --second-color: #363636;
     --third-color: rgb(0, 0, 0);
@@ -169,7 +169,7 @@ a {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--nav-color);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.205);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* nav bar */
@@ -431,6 +431,7 @@ a {
 .send__container {
     max-width: 1024px;
     margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .send__title {
@@ -577,6 +578,16 @@ main .imageIcone {
 
 .imageIcones {
     width: 100px
+}
+
+.js,
+.htmlcss,
+.bootstrap,
+.typescript,
+.reactjs,
+.sass,
+.next {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #skills {
