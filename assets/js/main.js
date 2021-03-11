@@ -51,9 +51,8 @@ sr.reveal(".send__img", { delay: 300, origin: "right" });
 
 /* = SCROLL SKILLS = */
 sr.reveal(".skills__subtitle", {});
-sr.reveal(".skills__text", {});
 sr.reveal(".about__text", { interval: 200, origin: "bottom" });
-sr.reveal(".hab__img", { delay: 200, origin: "top" });
+sr.reveal(".skill_img", { delay: 200, origin: "top" });
 
 /* = SCROLL WORK = */
 sr.reveal(".work__img", { interval: 150, origin: "top" });
