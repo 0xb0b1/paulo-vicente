@@ -92,13 +92,8 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-
     color: var(--second-color);
     background-color: var(--body-color);
-    background-image: radial-gradient(circle at top right,
-            rgba(121, 68, 154, 0.13), transparent),
-        radial-gradient(circle at 20% 80%,
-            rgba(41, 196, 255, 0.13), transparent);
     overflow-x: hidden;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -169,7 +164,6 @@ a {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--nav-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* nav bar */
@@ -353,7 +347,6 @@ a {
 }
 
 .button:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
     color: var(--first-color);
     background-color: var(--nav-color);
 }
@@ -373,7 +366,6 @@ a {
 }
 
 .buttoncv:hover {
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
     color: var(--first-color);
     background-color: var(--nav-color);
 }
@@ -431,7 +423,6 @@ a {
 .send__container {
     max-width: 1024px;
     margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .send__title {
@@ -507,7 +498,6 @@ td .fas {
     padding: 40px 40px 80px 40px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px #cacaca;
     position: relative
 }
 
@@ -531,7 +521,7 @@ td .fas {
 }
 
 #projects article div .live-button {
-    background-color: #4070f4;
+    background-color: var(--first-color);
     padding: 10px 20px;
     color: #fff;
     border: 0;
@@ -577,16 +567,6 @@ main .imageIcone {
 
 .imageIcones {
     width: 100px
-}
-
-.js,
-.htmlcss,
-.bootstrap,
-.typescript,
-.reactjs,
-.sass,
-.next {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #skills {
@@ -660,7 +640,6 @@ main .imageIcone {
     width: 60%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px #e7e7e7;
     padding: 30px
 }
 
@@ -720,7 +699,7 @@ main .imageIcone {
 
 #contact #botao {
     margin-top: 20px;
-    background-color: #4070f4;
+    background-color: var(--first-color);
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -769,7 +748,6 @@ main .imageIcone {
     text-align: center;
     padding: 2rem 0;
     display: block;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.719);
     z-index: var(--z-normal);
     position: relative;
 }
