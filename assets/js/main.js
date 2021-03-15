@@ -70,7 +70,7 @@ window.addEventListener("scroll", scrollFunction);
 
 window.addEventListener("width", matchMedia); // Attach listener function on state changes
 
-var x = window.matchMedia("(min-width: 768px)");
+let x = window.matchMedia("(min-width: 768px)");
 scrollFunction(x); // Call listener function at run time
 
 function scrollFunction() {
