@@ -20,8 +20,8 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    rel="stylesheet">
 
 </head>
 
@@ -87,7 +87,7 @@
             <div class="home__img" id="logo"> </div>
         </section>
         <!-- about -->
-        <section class="send section" id="about">
+        <section class="section" id="about">
             <div class="send__container">
                 <div class="bd-container bd-grid">
                     <div class="send__content about__text">
@@ -136,7 +136,7 @@
                 <div class="work__img">
                     <h3>Finance App</h3>
                     <p> - App to manage your finances.</p>
-                    <span class="botoes-projetos">
+                    <span class="btn-projects">
                         <a href="https://0xb0b1.github.io/finance-app/" target="_blank">
                             <button class="live-button"><i class="fa fa-link"></i> demo</button>
                         </a>
@@ -149,7 +149,7 @@
                 <div class="work__img">
                     <h3>Note Taking App</h3>
                     <p> - Simple Note Taking App.</p>
-                    <span class="botoes-projetos">
+                    <span class="btn-projects">
                         <a href="https://0xb0b1.github.io/notes-app/" target="_blank">
                             <button class="live-button"><i class="fa fa-link"></i> demo</button>
                         </a>
@@ -161,7 +161,7 @@
                 <div class="work__img">
                     <h3>Book shelf</h3>
                     <p> - App to Manage books. Built with Javascript & Bootstrap</p>
-                    <span class="botoes-projetos">
+                    <span class="btn-projects">
                         <a href="https://0xb0b1.github.io/bookList/" target="_blank">
                             <button class="live-button"><i class="fa fa-link"></i> demo</button>
                         </a>
@@ -173,7 +173,7 @@
                 <div class="work__img">
                     <h3>Todo List</h3>
                     <p> - Todo App built with ReactJS & TypeScript & SASS.</p>
-                    <span class="botoes-projetos">
+                    <span class="btn-projects">
                         <a href="https://paulo-vicente-todo-app.netlify.app/" target="_blank">
                             <button class="live-button"><i class="fa fa-link"></i> demo</button>
                         </a>
@@ -185,7 +185,7 @@
                 <div class="work__img">
                     <h3>This Portfólio</h3>
                     <p> - My personal portolio>
-                        <span class="botoes-projetos">
+                        <span class="btn-projects">
                             <a href="https://paulo-vicente.netlify.app" target="_blank">
                                 <button class="live-button"><i class="fa fa-link"></i> demo</button>
                             </a>
@@ -197,7 +197,7 @@
                 <div class="work__img">
                     <h3>Coming Next</h3>
                     <p> - ...</p>
-                    <span class="botoes-projetos">
+                    <span class="btn-projects">
                         <a href="#" target="_blank">
                             <button class="live-button"><i class="fa fa-link"></i> demo</button>
                         </a>
@@ -216,12 +216,12 @@
             <h2>Languages and Frameworks I use</h2>
             <div>
                 <article class="skill_box">
-                    <img src="assets/image/logoHTMLeCSS.png" alt="Logo do HTML e CSS" class="imageIcones skills__img" />
+                    <img src="assets/image/logoHTMLeCSS.png" alt="HTML & CSS Logo" class="imageIcones skills__img" />
                     <h2 class="skills__subtitle">HTML & CSS</h2>
                 </article>
 
                 <article class="skill_box">
-                    <img src="assets/image/logoJS.png" alt="Logo do JavaScript" class="imageIcone skills__img" />
+                    <img src="assets/image/logoJS.png" alt="JavaScript Logo" class="imageIcone skills__img" />
                     <h2 class="skills__subtitle">JavaScript</h2>
                 </article>
 
@@ -241,40 +241,39 @@
                 </article>
 
                 <article class="skill_box">
-                    <img src="assets/image/logoNext.png" alt="Node.js logo" class="imageIcone skills__img" />
+                    <img src="assets/image/logoNext.png" alt="NextJS logo" class="imageIcone skills__img" />
                     <h2 class="skills__subtitle">Next.js</h2>
                 </article>
 
                 <article class="skill_box">
-                    <img src="assets/image/logoTypeScript.png" alt="Logo do TypeScript"
-                        class="imageIcone skills__img" />
+                    <img src="assets/image/logoTypeScript.png" alt="TypeScript Logo" class="imageIcone skills__img" />
                     <h2 class="skills__subtitle">TypeScript</h2>
                 </article>
             </div>
         </section>
 
         <!-- contact -->
-        <form action="mailto:vcente82@gmail.com" class="contact__input" id="contact" method="post" enctype="text/plain">
+        <form action="" class="contact__input" id="contact" method="post" enctype="text/plain">
             <fieldset id="contactField">
-                <div id="campoFlex">
-                    <div class="campoPadrao">
+                <div id="flexField">
+                    <div class="defaultField">
                         <label>E-mail</label>
-                        <input name="email" type="email" class="campos" placeholder="Your e-mail" required>
+                        <input name="email" type="email" class="fields" placeholder="Your e-mail" required>
                     </div>
 
-                    <div class=" campoPadrao" id="espacoResponsivo">
+                    <div class="defaultField" id="respS">
                         <label>Name</label>
-                        <input name="nome" type="text" class="campos" placeholder="Your Name" required>
+                        <input name="name" type="text" class="fields" placeholder="Your Name" required>
                     </div>
                 </div>
 
-                <div id="campoDois">
+                <div id="msgField">
                     <label>Message</label>
-                    <textarea name="mensagem" id="campoMensagem" cols="30" rows="10" placeholder="Your Message"
+                    <textarea name="message" id="messageField" cols="30" rows="10" placeholder="Your Message"
                         required></textarea>
                 </div>
 
-                <input class="send__content1" type="submit" value="Send" id="botao">
+                <input class="send__content1" type="submit" value="Send" id="btn">
 
             </fieldset>
         </form>
