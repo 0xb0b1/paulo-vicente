@@ -318,7 +318,7 @@ a {
 .home__title,
 .spin:after {
     content: 'Front-End Developer';
-    animation: text 9s linear infinite;
+    animation: text 9s ease-in infinite;
 }
 
 @keyframes text {
